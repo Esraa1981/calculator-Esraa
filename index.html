@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="wrapper">
+<div id="calcu">
+<center>
+<FORM NAME="Calc">
+<TABLE>
+<TR>
+<TD>
+<INPUT TYPE="text"   NAME="Input" Size="50">
+</td>
+</tr>
+<TR>
+<TD>
+<INPUT TYPE="reset" NAME="reset"  VALUE="  C  " OnClick="Calc.Input.value += ' 0 '">
+</td>
+</tr>
+<TR>
+<TD>
+<INPUT TYPE="button" NAME="seven"   VALUE="  7  " OnClick="Calc.Input.value += '7'"> 
+<INPUT TYPE="button" NAME="eight"   VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+<INPUT TYPE="button" NAME="nine"   VALUE="  9  " OnCLick="Calc.Input.value += '9'">
+<INPUT TYPE="button" NAME="multi"  VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+<br>
+<INPUT TYPE="button" NAME="four"   VALUE="  4  " OnClick="Calc.Input.value += '4'"> 
+<INPUT TYPE="button" NAME="five"   VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnCLick="Calc.Input.value += '6'">
+<INPUT TYPE="button" NAME="minus"  VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+<br>
+<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'"> 
+<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+<INPUT TYPE="button" NAME="three" VALUE="  3  " OnCLick="Calc.Input.value += '3'">
+<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+<br>
+<INPUT TYPE="button" NAME="zero"   VALUE="  0  " OnCLick="Calc.Input.value += '0'">
+<INPUT TYPE="button" NAME="dot"   VALUE="  .  " OnCLick="Calc.Input.value += '.'">
+<INPUT TYPE="button" NAME="ave"  VALUE="Average" OnClick="Calc.Input.value = average()">
+<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+</TD>
+</TR>
+</TABLE>
+</FORM>
+<center>
+<h3>To find the average enter your set of number seperated by space</h3>
+</div>
+</div>
+<script type="text/javascript">
+var average = function()
+{
+var str = Calc.Input.value;
+var res = str.split(" ");
+var container=0;
+for (var i=0;i<res.length ; i++)
+{
+container=container+Number(res[i]);
+}
+container=container/i;
+return container;
+}
+</script>
+</body>
+</html>
