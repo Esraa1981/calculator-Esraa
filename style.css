@@ -6,6 +6,7 @@ body{
 	background-size: cover;
 
 }
+/*style the calculator body*/
 #wrapper
 {
 	height: 600px;
@@ -19,6 +20,7 @@ body{
     box-shadow: 0 10px 6px -6px black;
 }
 
+/*style the display bar*/
 input[type=text] {
 	margin: 30px;
 	margin-bottom: 5px;
@@ -31,6 +33,7 @@ input[type=text] {
     border:2px solid black;
 }
 
+/*style the body*/
 input[type=button], input[type=reset]{
 	margin: 6px;
     padding:5px; 
@@ -43,16 +46,19 @@ input[type=button], input[type=reset]{
 
 }
 
+/*style the hover*/
 input[type=button]:hover , input[type=reset]:hover {
     font-size: 22px;
     background: #51555b; 
 
 }
-
+/*put the button in center*/
 table
 {
 	text-align: center;
 }
+
+/*style the dicrections */
 h3
 {
     margin: 50px;
