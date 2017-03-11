@@ -5,6 +5,7 @@
 	<title></title>
 </head>
 <body>
+<h3>To find the average enter your set of number seperated by space</h3>
 <div id="wrapper">
 <div id="calcu">
 <center>
@@ -46,7 +47,6 @@
 </TABLE>
 </FORM>
 <center>
-<h3>To find the average enter your set of number seperated by space</h3>
 </div>
 </div>
 <script type="text/javascript">
@@ -60,7 +60,10 @@ for (var i=0;i<res.length ; i++)
 container=container+Number(res[i]);
 }
 container=container/i;
+if(isNaN(container)===false)
 return container;
+else if(isNaN(container)===true)
+	return("Error invalid Entry");
 }
 </script>
 </body>
